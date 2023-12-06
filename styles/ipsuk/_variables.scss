@@ -1,0 +1,35 @@
+﻿@import "../common_variables";
+
+// Bootstrap overrides - LSI
+$color-enterprise-blue: #007BC7;
+$color-light-gray: #DCDEE0;
+// $color-spark-blue: #078FE1;
+$color-spark-blue: $color-enterprise-blue;
+$color-spark-gold: #FFE366;
+// $color-spark-darkblue: #00529B;
+$color-spark-darkblue: $color-enterprise-blue;
+$color-spark-lightblue: #cde2f4;
+$baseLineHeight: 18px;
+
+$primary: $color-enterprise-blue;
+$secondary: $color-light-gray;
+$info: #00539B;
+$accents: $color-spark-darkblue;
+$link-color: #00529B;
+
+$color-darkblue-titleProgressBar: #00539B;
+$color-regblue-titleProgressBar: #078DDE;
+// Overrides for custom select
+$custom-select-gradient-bg: linear-gradient(to bottom, $white, $secondary);
+
+$theme-colors: ( 
+    "gold": $color-spark-gold
+);
+
+$side-menu-color: $color-light-gray;
+$side-menu-active-border: $color-enterprise-blue;
+
+@mixin icg-field-text() {
+    font-family: 'Open Sans';
+    font-weight: 300;
+}

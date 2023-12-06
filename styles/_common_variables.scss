@@ -1,0 +1,41 @@
+// Bootstrap overrides - Common LSI and IPP
+
+$white: #fff;
+$almostWhite: #f5f5f5;
+$color-background-gray: #364655;
+$color-active-gray: #283746;
+$color-text-default: #505050;
+$color-text-light: $white;
+$color-text-dark: #646464;
+$color-text-input: #6C6C6C;
+$yellowHightlight: #FFFF99;
+
+$green: #4ead1f;
+$red: #B13232;
+
+$success: $green;
+$danger: $red;
+
+$side-menu-bg: $color-background-gray;
+$side-menu-active-color: $white;
+$side-menu-hover-color: $white;
+$side-menu-active-bg: $color-active-gray;
+$side-menu-font-size: 1rem !default;
+$side-menu-icon-size: 1.25rem;
+$side-menu-padding: 0rem .5rem !default;
+
+$max-form-width: 1096px;
+
+$headings-font-weight:        700;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 1.62;
+$h2-font-size:                $font-size-base * 1.5;
+$h3-font-size:                $font-size-base * 1.37;
+$h4-font-size:                $font-size-base * 1.25;
+$h5-font-size:                $font-size-base * 1.12;
+$h6-font-size:                $font-size-base;
+
+
+$visual-picker-size: 8rem !default;
+$visual-picker-padding: 0.5rem !default;

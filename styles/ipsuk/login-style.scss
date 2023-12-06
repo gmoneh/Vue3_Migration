@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+.form-area {
+    background-color: #FFF;
+    height: 100vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    overflow: auto;
+}
+.message-area {
+    background-image: url("/images/log-in-bg.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    overflow: auto;
+}
+.padding-0 {
+    padding: 0;
+}
+.logo {
+/*    width: 285px;
+    margin: 0 auto 40px auto; */
+    display: block;
+}
+h1 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: rgba(40,40,40,1);
+    text-align: center;
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.login-form-container {
+    position: absolute;
+    max-width: 315px;
+    margin: -340px auto 0 auto;
+    padding: 40px 0;
+    height: 620px;
+    top: 50%;
+    left:0;
+    right:0;
+    overflow: hidden;
+}
+.fb-login {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    width: 192px;
+}
+.g-login {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    width: 172px;
+}
+.btn-white {
+    background: #FFF;
+    border: 1px solid rgba(220,222,224,1);
+}
+.btn-white:hover {
+    background: #eee;
+}
+.btn-38 {
+    height: 38px;
+}
+.or {
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+.copyright {
+    color: rgba(150,150,150,1);
+    margin-bottom: 4px;
+}
+.foot {
+    position: absolute;
+    bottom: 15px;
+    left:0;
+    right:0;
+}
+.marketing-message-header {
+    font-size: 44px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.marketing-message-subhead {
+    font-size: 18px;
+    font-weight: 700;
+}
+.marketing-p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+a.btn-marketing {
+    font-size: 16px;
+    color:#078FE1;
+    font-weight: 500;
+    height: 38px;
+    background: #FFF;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a.btn-marketing:hover {
+    opacity: 0.80;
+    color:#078FE1;
+    background: #FFF;
+}
+.message-icon {
+    float: left;
+    padding: 0 10px 40px 0;
+    margin-top: 4px;
+}
+.message-container {
+    max-width: 325px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    margin-left: 80px;
+    margin-top: -275px;
+}
+
+form#loginForm button.btn-login {
+	width: 100% !important;
+	height: 38px !important;
+	font-size: 16px !important;
+	margin: 0 !important;
+}
+
+form#loginForm div.login-forgot-password {
+	margin: 0 0 20px 0 !important;
+	font-size: 14px !important;
+	text-align: center !important;
+}
+
+.new-login {
+	padding: 15px 15px 5px 15px;
+	margin-bottom: 30px;
+	background-color: rgba(244,246,248,1);
+	border: 1px solid rgba(220,222,224,1);
+	border-radius: 6px;
+}
+
+.form-group {
+	margin-bottom: 0 !important;
+}
+
+
+@media (max-height: 700px) {
+    .form-container {
+	    position: relative;
+	    max-width: 315px;
+	    margin: 0 auto;
+	    padding: 40px 0;
+	    top: 0;
+	    left:0;
+	    right:0;
+    }
+    .message-container {
+	    max-width: 315px;
+	    position: relative;
+	    top: 60px;
+	    margin-left: 40px;
+	    margin-top: 0;
+    }
+	.foot {
+	    position: absolute;
+	    bottom: 0;
+	    left:0;
+	    right:0;
+	    height: 54px;
+	    padding-top: 5px;
+	    background-color: #FFF;
+	    border-top: 1px solid rgba(220,222,224,1);
+    }
+}

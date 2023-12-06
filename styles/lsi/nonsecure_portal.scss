@@ -1,0 +1,20 @@
+@import "./variables";
+@import "./custom";
+@import "../nonsecure_portal";
+
+.message-area-login {
+    background-image: url("/images/log-in-bg.jpg");
+}
+
+.message-area-signup {
+    background-image: url("/images/log-in-bg.jpg");
+}
+
+
+a.btn-marketing {
+    color:#078FE1;
+}
+a.btn-marketing:hover {
+    color:#078FE1;
+    background: #FFF;
+}

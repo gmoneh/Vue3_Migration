@@ -1,0 +1,22 @@
+
+.nav-tabs {
+
+    .nav-link {
+        border-color: $nav-tabs-link-hover-border-color;
+    }
+
+}
+
+.tabs {
+
+    .tab-content.card {
+        box-shadow: none;
+        border: 1px solid $card-border-color;
+        border-top: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+}

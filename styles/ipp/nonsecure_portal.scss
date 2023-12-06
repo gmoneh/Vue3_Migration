@@ -1,0 +1,28 @@
+@import "./variables";
+@import "./custom";
+@import "../nonsecure_portal";
+
+form#loginForm button.btn-login {
+    background-color: #3a7c92 !important;
+}
+
+.message-area-login {
+    background-image: url("https://www.ingramspark.com/hubfs/templates/new-alt/images/log-in-bg.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    overflow: auto;
+}
+
+.message-area-signup {
+    background-image: url("https://www.ingramspark.com/hubfs/templates/new-alt/images/create-account-bg.jpg");
+}
+
+
+a.btn-marketing {
+    color:#3a7c92;
+}
+a.btn-marketing:hover {
+    color:#3a7c92;
+    background: #FFF;
+}

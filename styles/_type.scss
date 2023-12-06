@@ -1,0 +1,29 @@
+
+/*-------------------------------------
+ 	Typography
+---------------------------------------*/
+
+.legalese {
+    font-size: 80%;
+}
+
+.legalese-bold {
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.legalese-italic {
+    font-size: 80%;
+    font-style: italic;
+}
+
+.lead {
+    font-size: 125%;
+}
+
+.quote {
+    @include media-breakpoint-up(sm) {
+        border-left: solid 15px $light;
+        padding-left: 1rem;
+    }
+}

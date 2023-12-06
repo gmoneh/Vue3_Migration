@@ -1,0 +1,21 @@
+.editor-counter {
+    border: 1px solid $input-border-color;
+    border-width: 0px 1px 1px 1px;
+    color: $color-light-gray;
+    background-color: $input-bg;
+    padding: 10px 15px;
+    text-align: right;
+    line-height: 1.4rem;
+    @include border-bottom-radius($input-border-radius);
+}
+.ql-toolbar {
+    background-color: $input-bg;
+    @include border-top-radius($input-border-radius);
+}
+
+.lsi-rich-text-editor {
+    .ql-container {
+        height: 15rem;
+        background-color: $input-bg;
+    }
+}

@@ -1,0 +1,34 @@
+.modal-dialog.spark-popup {
+    .modal-header {
+        border-bottom: none;
+          justify-content: right;
+    }
+    .modal-footer {
+        border-top: none;
+    }
+}
+
+
+.modal-header {
+    &::before {
+        font-family: 'Font Awesome 5 Free';
+        font-size: 1.25rem;
+        font-weight: 900;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    &.icon-info {
+        &::before {
+            content: "\f05a";
+            color: $info;
+        }
+    }
+
+    &.icon-question {
+        &::before {
+            content: "\f059";
+            color: $info;
+        }
+    }
+}

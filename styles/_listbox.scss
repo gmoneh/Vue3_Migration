@@ -1,0 +1,19 @@
+.v-list-box {
+
+    min-height: 18em;
+    min-width: 20rem;
+    width: 100%;
+    padding: 0;
+    border: $input-border-width solid $input-border-color;
+    @include border-radius($input-border-radius, 0);
+    @include box-shadow($input-box-shadow);
+
+
+    li[role="option"] {
+        display: block;
+        padding: 0 1em 0 1.5em;
+        position: relative;
+        line-height: 1.8em;
+    }
+}
+

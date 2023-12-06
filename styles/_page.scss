@@ -1,0 +1,36 @@
+﻿.app-main.app-main-compact {
+    @include media-breakpoint-up(md) {
+        padding-left: $app-aside-width-compact;
+    }
+}
+
+
+.page-title-bar,
+.page-section {
+    max-width: none;
+    margin-bottom: 0px;
+
+    > * {
+        margin-bottom: 1.5rem;
+    }
+}
+
+iframe {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.cc-large {
+    height: 1700px;
+    overflow-y: hidden;
+}
+
+.cc-small {
+    min-height: 250px;
+}
+
+.cc-medium {
+    height: 550px;
+}

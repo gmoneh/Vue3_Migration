@@ -1,0 +1,9 @@
+
+%normal-looking-link {
+    color: $body-color;
+
+    &:focus, &:hover {
+        text-decoration: none;
+        box-shadow: 0 0;
+    }
+}

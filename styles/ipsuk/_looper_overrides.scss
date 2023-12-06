@@ -1,0 +1,26 @@
+﻿$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+$alert-bg-level: -10;
+$alert-border-level: -9;
+$alert-color-level: 6;
+
+$body-bg:                   $white;
+
+
+// Looper overrides
+$app-aside-light-bg: $color-background-gray;
+$app-aside-light-color: $white;
+$app-aside-light-border-color: #E9EAEB;
+$app-aside-border-width: 0px;
+$app-header-accent-color: rgba(black, 0);
+$app-aside-width-compact: 4rem;
+$stacked-menu-active-bg: $color-active-gray;
+$stacked-menu-child-active-bg: $color-active-gray;
+$stacked-menu-color: $color-light-gray;
+$btn-account-width: 5.5rem;
+$modal-header-border-width: 1px;
+$modal-footer-border-width: 1px;
+
+$dropdown-link-hover-color:         $white;

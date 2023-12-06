@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "./utilities";
+@import "./buttons";
+@import "./form";
+@import "./visual-picker";
+
+    .form-container {
+        padding: 40px 10px;
+    }
+
+    .login-form-container {
+        position: absolute;
+        max-width: 315px;
+        margin: -370px auto 0 auto;
+        padding: 40px 10px;
+        height: 680px;
+        top: 50%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    @mixin nonsecure-form {
+        input[type="text"], input[type="password"] {
+            background: $almostWhite;
+        }
+    }
+
+    .login-form {
+        @include nonsecure-form;
+
+        button.btn-login {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            height: 38px !important;
+            font-size: 16px !important;
+            white-space: nowrap;
+        }
+
+        div.login-forgot-password {
+            margin: 0 0 20px 0 !important;
+            font-size: 14px !important;
+            text-align: right !important;
+        }
+    }
+
+    .signup-form {
+        .control-group, .form-group {
+            margin-top: 1rem;
+        }
+
+        @include nonsecure-form;
+    }
+
+    .signup-form-container {
+        max-width: 320px;
+        margin: 0 auto 0 auto;
+        padding: 40px 10px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    .form-area {
+        background-color: #FFF;
+        height: 100vh;
+        overflow: auto;
+    }
+
+    .login-form-container, .signup-form-container, .form-container {
+
+        .btn-lg {
+            width: 100%;
+            height: 38px;
+            line-height: 21px;
+            font-size: 16px;
+        }
+
+        .padding-0 {
+            padding: 0;
+        }
+
+        .logo {
+            width: 285px;
+            margin: 0 auto 10px auto;
+            display: block;
+        }
+    }
+
+    .message-area-login, .message-area-signup {
+        background-size: cover;
+        background-position: center top;
+        height: 100vh;
+        overflow: auto;
+
+        .marketing-message-item {
+            padding-bottom: 2rem;
+        }
+
+        .message-icon {
+            float: left;
+            padding: 0 10px 10px 0;
+            margin-top: 4px;
+        }
+    }
+
+    .message-area-login {
+        .message-container {
+            max-width: 315px;
+            height: 480px;
+            position: absolute;
+            top: 50%;
+            margin-left: 80px;
+            margin-top: -275px;
+        }
+    }
+
+    .message-area-signup {
+        .message-container {
+            max-width: 768px;
+            height: 480px;
+            position: absolute;
+            top: 50%;
+            margin-left: 80px;
+            margin-top: -275px;
+        }
+    }
+
+    .marketing-message-header {
+        font-size: 44px;
+        line-height: 1.1;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .marketing-message-subhead {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    p.marketing-p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    a.btn-marketing {
+        font-size: 16px;
+        font-weight: 500;
+        height: 38px;
+        background: #FFF;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    a.btn-marketing:hover {
+        opacity: 0.80;
+    }
+
+
+    h3.marketing-message-subhead {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    p.marketing-p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    a.btn-marketing {
+        font-size: 16px;
+        color: #3a7c92;
+        font-weight: 500;
+        height: 38px;
+        background: #FFF;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    a.btn-marketing:hover {
+        opacity: 0.80;
+        color: #3a7c92;
+        background: #FFF;
+    }
+
+    .marketing-message-header {
+        font-size: 44px;
+        line-height: 1.1;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        color: #535A62;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 15px 0;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .fb-login {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 192px;
+    }
+
+    .g-login {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 172px;
+    }
+
+    .btn-white {
+        background: #FFF;
+        border: 1px solid rgba(220,222,224,1);
+    }
+
+    .btn-white:hover {
+        background: #eee;
+    }
+
+    .btn-38 {
+        height: 38px;
+    }
+
+    .or {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .copyright {
+        color: rgba(150,150,150,1);
+        margin-bottom: 4px;
+    }
+
+    .foot {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    @media (max-height: 1200px) {
+        .message-container {
+            max-width: 315px;
+            position: relative;
+            top: 60px;
+            margin-left: 40px;
+            margin-top: 0;
+        }
+
+        .foot {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 54px;
+            padding-top: 5px;
+            background-color: #FFF;
+            border-top: 1px solid rgba(220,222,224,1);
+        }
+    }

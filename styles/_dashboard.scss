@@ -1,0 +1,48 @@
+.dashboard-container {
+    &.container-fluid {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+    section.dashboard-section {
+        margin-bottom: 3rem;
+
+        .visual-picker {
+            margin-right: 20px;
+        }
+
+    }
+}
+
+
+.sectionSearch {
+    & > .searchPanel {
+        display: flex;
+        justify-content: space-between;
+
+        & > .buttonPanel {
+            margin-left: 1.5rem;
+        }
+
+        .opportunities-stack.vertical + & {
+            flex-direction: column-reverse;
+
+            & > .buttonPanel {
+                margin-left: 0rem;
+                margin-bottom: 1.0rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                flex-direction: initial;
+                .buttonPanel {
+                    margin-left: 1.5rem;
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,145 @@
+﻿label {
+    font-weight: 600;
+
+    .col-form-label > & {
+        margin-bottom: 0;
+    }
+}
+
+.custom-radio label, .custom-checkbox label {
+    font-weight: 400;
+}
+
+label.input-validation-error {
+    border: 1px solid $danger;
+}
+
+.required-icon {
+    color: $red;
+    margin-left: -10px;
+    margin-right: 2px;
+    font-size: 60%;
+    vertical-align: middle;
+
+    &.right {
+        margin-left: 2px;
+    }
+}
+
+.help-icon {
+    color: $blue;
+    margin-left: 5px;
+    margin-right: -14px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.help-icon-pre {
+    margin-right: 0px;
+}
+
+.inline-label {
+    display: inline-block;
+    width: 100px;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+.popover-help {
+    width: $popover-max-width;
+}
+.popover-header {
+    color: $link-color;
+}
+// Overrides for custom select
+$custom-select-gradient-background: $custom-select-background, $custom-select-gradient-bg ;
+$custom-select-background: $custom-select-background, $custom-select-bg ;
+.custom-select {
+    background: $custom-select-background;
+}
+
+
+.form-control input {
+    color: $input-color;
+}
+
+.input-group {
+    .custom-select {
+        border-width: 0px;
+    }
+
+    .vdp-datepicker {
+        padding: 0px;
+        border: none;
+        border-width: 0px;
+        width: 100%;
+        flex-basis: 0%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        .input-group {
+            border-width: 0px;
+        }
+        input[type='text'].form-control {
+            border-width: 0px;
+        }
+    }
+
+    .form-control~.input-group-append {
+        .input-group-text {
+            font-size: 1rem;
+        }
+    }
+}
+
+.input-group-prepend, .input-group-append {
+    .custom-select {
+        background: $custom-select-gradient-background;
+        border-width: 0px 1px 0px 0px;
+        height: inherit;
+    }
+}
+
+fieldset {
+    legend {
+        button.btn.btn-link {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+button.btn.btn-link.btn-plain-text {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    vertical-align: baseline;
+}
+
+form {
+    .form-row {
+        &>[class*="col"].aligned {
+            display: flex;
+
+            &>fieldset {
+                align-self: end;
+            }
+        }
+
+        &.label-row {
+            &>[class*="col"].label-col {
+                display: flex;
+
+                label {
+                    align-self: end;
+                }
+            }
+        }
+    }
+}
+
+.invalid-feedback {
+    ul {
+        padding-inline-start: 0px;
+    }
+}
+
+legend.col-form-label {
+    font-weight: bold;
+}

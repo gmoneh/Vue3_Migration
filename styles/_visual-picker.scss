@@ -1,0 +1,166 @@
+
+@mixin visual-picker-variant($background, $border, $color) {
+    color: $color;
+
+    $inner-box-shadow: inset 0 0 0 2px $border, 0 0 0 1px rgba($dark, .05), 0 1px 3px 0 rgba($dark, .15);
+
+    .visual-picker-figure {
+        border-color: $border;
+        @include gradient-bg($background);
+        &:after {
+          color: $color;
+        }
+    }
+
+    @include hover-focus {
+        .visual-picker-figure:not(.disabled) {
+          box-shadow: $inner-box-shadow; 
+        }
+    }
+
+    
+    input[type="checkbox"]:not([disabled]),
+    input[type="radio"]:not([disabled]) {
+        &:checked ~ .visual-picker-figure {
+            box-shadow: $inner-box-shadow;
+        }
+
+        &:focus ~ .visual-picker-figure {
+            box-shadow: $inner-box-shadow;
+        }
+    }
+}
+
+@mixin visual-picker-short($dim) {
+    $newdim: $dim/2;
+
+    &.visual-picker-short {
+        .visual-picker-figure {
+            height: #{$newdim}rem;
+
+            .visual-picker-content {
+                height: #{$newdim*2/3}rem;
+                width: #{$newdim*2}rem;
+            }
+        }
+    }
+
+    &.visual-picker-xshort {
+        .visual-picker-figure {
+            height: #{$newdim/2}rem;
+        }
+    }
+
+    &.has-peek-inside {
+        .visual-picker-figure {
+            .visual-picker-content {
+                margin-top: -0.5rem;
+            }
+        }        
+    }
+}
+
+.visual-picker-peek {
+    font-size: .75rem;
+    line-height: 1rem;
+    text-overflow: unset;
+    white-space: normal;
+
+    &.disabled {
+        opacity: 0.5;
+    }
+}
+
+.has-peek-inside {
+    .visual-picker-peek {
+        bottom: 0.5rem;
+    }
+    .visual-picker-figure {
+        .visual-picker-content {
+            img {
+                height: 80%;
+            }
+        }
+    }
+}
+
+.visual-picker-figure {
+    padding: $visual-picker-padding*2 $visual-picker-padding $visual-picker-padding $visual-picker-padding;
+    margin-bottom: 0rem;
+    color: inherit;
+    .visual-picker-content
+    {
+        line-height: 1.0;
+        height: $visual-picker-size * 0.625;
+        width: $visual-picker-size;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            margin-bottom: 0rem;
+        }
+        .tile.tile-lg {
+            margin-top: 1rem;
+        }
+    }
+
+    &.disabled {
+        cursor: default;
+        opacity: 0.5;
+    }
+}
+
+.visual-picker {
+    @include visual-picker-short(6);
+    &-lg {
+        .visual-picker-figure {
+            padding: $visual-picker-padding*2*1.5 $visual-picker-padding*1.5 $visual-picker-padding*1.5 $visual-picker-padding*1.5;
+            .visual-picker-content
+            {
+                height: $visual-picker-size * 0.875;
+                width: $visual-picker-size * 1.5;
+            }
+        }
+        .visual-picker-peek {
+            font-size: .8125rem;
+        }
+    @include visual-picker-short(12);
+    }
+
+    &-xl {
+        .visual-picker-figure {
+            width: 22rem;
+            height: 22rem;
+            padding: $visual-picker-padding*2*1.5 $visual-picker-padding*1.5 $visual-picker-padding*1.5 $visual-picker-padding*1.5;
+            .visual-picker-content
+            {
+                height: $visual-picker-size * 1.75;
+                width: 22rem;
+            }
+        }
+        .visual-picker-peek {
+            font-size: .8125rem;
+        }
+        @include visual-picker-short(24);
+    }
+
+    &-sm {
+        .visual-picker-figure {
+            .visual-picker-content
+            {
+                height: $visual-picker-size * 0.25;
+                width: $visual-picker-size * 0.5;
+            }
+        }
+        @include visual-picker-short(4);
+    }
+}
+  
+
+@each $color, $value in $theme-colors {
+    .visual-picker-#{$color} {
+        @include visual-picker-variant(theme-color-level($color, -9), theme-color-level($color, 4), theme-color-level($color, 4));
+    }
+  }
+  

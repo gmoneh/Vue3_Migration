@@ -1,0 +1,88 @@
+﻿.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.affix {
+    position: fixed;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centeredX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.centeredY {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+// Contextual colors
+
+.validation-summary-valid {
+    display: none;
+}
+
+.validation-summary-errors {
+    color: $danger;
+}
+
+.field-validation-error {
+    color: $danger;
+}
+
+@include text-emphasis-variant(".text-error", $danger, true);
+
+input.input-validation-error, select.input-validation-error, .well.input-validation-error {
+    border-color: $danger;
+}
+
+input[type="checkbox"].input-validation-error, input[type="radio"].input-validation-error {
+    outline: 1px solid $danger;
+    outline-offset: 3px;
+}
+
+@-moz-document url-prefix() {
+    input[type="checkbox"].input-validation-error, input[type="radio"].input-validation-error {
+        outline-offset: 0;
+    }
+}
+
+.view-body {
+    margin-top: 20px;
+}
+
+
+// Address selection
+a.address-selector {
+    color: $link-color !important;
+    cursor: pointer;
+}
+
+.lsi-hide {
+	display: none;
+}

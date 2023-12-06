@@ -1,0 +1,36 @@
+ul.nugget-well {
+  display: inline-block;
+  position: relative;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+  transition: border linear .2s, box-shadow linear .2s;
+  height: auto;
+  min-height: calc(#{$input-height} + calc(#{$badge-padding-y} + #{$badge-padding-x}));
+
+  &.disabled {
+    background-color: $input-disabled-bg;
+  }
+
+  li.nugget {
+    margin-right: 0.5rem;
+    font-weight: 400;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+
+    button {
+      padding: 1px 1px 5px 5px;
+      border: none;
+      background-color: transparent;
+      visibility: hidden;
+
+      &> * {
+        pointer-events: none;
+      }
+    }
+  }
+
+  li.nugget:hover button {
+    visibility: visible;
+  }
+
+}

@@ -1,0 +1,36 @@
+﻿.legend-panel {
+    border: 1px solid $color-light-gray;
+    border-radius: 4px;
+
+    .panel-caption {
+        background-color: $color-spark-blue;
+        color: $color-text-light;
+        padding-left: 10px;
+        line-height: 20px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        h1, h2, h3, h4, h5, h6 {
+            color: $color-text-light;
+        }
+    }
+
+    .panel-content {
+        box-sizing: border-box;
+        padding: 5px 15px;
+    }
+
+    .legend-text {
+        font-size: 0.75rem;
+    }
+}
+.swatch
+{
+    border: 1px solid #494949;
+    padding: 3px 8px;
+	width: 12px;
+	height: 12px;
+	vertical-align: text-bottom;
+	margin-right: 2px;
+	display:inline-block;
+}

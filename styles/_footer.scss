@@ -1,0 +1,33 @@
+﻿footer.app-footer {
+    background-color: $color-background-gray;
+    height: 80px;
+    padding-top: 1rem;
+    margin-bottom: 0px;
+
+    ul#social {
+        margin: 0px;
+        list-style: none;
+
+        li {
+            display: inline;
+            margin-right: 6px;
+        }
+
+        & > img {
+            width: 20px;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 11px;
+        color: $color-text-light;
+    }
+
+    .logo {
+        max-width:100%;
+    }
+}

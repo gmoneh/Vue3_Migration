@@ -1,0 +1,21 @@
+﻿.alert {
+    .text-icon {
+        font-size: 200%;
+        padding-right: 1rem;
+        vertical-align: middle;
+    }
+}
+
+.alert-action {
+    background-color: $color-spark-gold;
+    border-color: rgba(0, 0, 0, 0.1);
+    color: $color-text-dark;
+    position: relative;
+
+    span {
+        vertical-align: bottom;
+        height: 100%;
+        display: inline-block;
+        line-height: 2rem;
+    }
+}

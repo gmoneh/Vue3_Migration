@@ -1,0 +1,81 @@
+// Bootstrap components overrides
+// ==================================================
+
+@import "./bootstrap/type";
+@import "./bootstrap/images";
+@import "./bootstrap/code";
+@import "./bootstrap/grid";
+@import "./bootstrap/embed-responsive";
+@import "./bootstrap/tables";
+@import "./bootstrap/buttons";
+@import "./bootstrap/alerts";
+@import "./bootstrap/badge";
+//@import "./bootstrap/forms";
+@import "./bootstrap/input-group";
+//@import "./bootstrap/custom-forms";
+@import "./bootstrap/list-group";
+@import "./bootstrap/cards";
+@import "./bootstrap/dropdowns";
+@import "./bootstrap/progress";
+@import "./bootstrap/breadcrumb";
+//@import "./bootstrap/paginations";
+@import "./bootstrap/navs";
+@import "./bootstrap/navbar";
+@import "./bootstrap/modals";
+@import "./bootstrap/popovers";
+@import "./bootstrap/utilities";
+
+
+// Theme components
+// ==================================================
+// replace plugins
+//@import "default/components/plugins";
+
+// app layout
+@import "./components/base";
+@import "./components/header";
+@import "./components/aside";
+@import "./components/aside-compact";
+@import "./components/page";
+@import "./components/sidebar";
+@import "./components/footer";
+
+// app components
+@import "./components/rating";
+@import "./components/switchers";
+@import "./components/icons";
+@import "./components/tiles";
+@import "./components/avatar";
+@import "./components/mention";
+@import "./components/event";
+@import "./components/hamburger";
+@import "./components/figure";
+@import "./components/outbound-link";
+@import "./components/steps";
+@import "./components/todos";
+@import "./components/progress-list";
+@import "./components/visual-picker";
+@import "./components/publisher";
+@import "./components/timeline";
+@import "./components/conversations";
+@import "./components/feeds";
+@import "./components/tasks";
+@import "./components/metrics";
+@import "./components/countdown";
+@import "./components/empty-state";
+@import "./components/invoice";
+@import "./components/sticker";
+
+// pages
+@import "./components/auth";
+@import "./components/message";
+
+.user-avatar {
+  opacity: 0.7;
+  line-height: 28px;
+
+  .user-avatar-icon {
+    color: $color-spark-darkblue;
+    font-size: 24px;
+  }
+}

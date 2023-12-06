@@ -1,0 +1,36 @@
+﻿.app-header {
+    background: -moz-linear-gradient(left, $color-spark-blue 0%, $color-spark-darkblue 100%);
+    background: -webkit-linear-gradient(left, $color-spark-blue 0%, $color-spark-darkblue 100%);
+    background: linear-gradient(to right, $color-spark-blue 0%, $color-spark-darkblue 100%);
+
+    .btn-account {
+        border-radius: 0px;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .btn-account::after {
+        display: none;
+    }
+
+    .badge {
+        font-size: 65%;
+    }
+
+    .badge-pill {
+        padding-right: .6em;
+        padding-left: .6em;
+        position: relative;
+        top: -.8em;
+        left: -.8em;
+    }
+}
+
+.header-nav
+{
+    .nav-item > .nav-link {
+        font-size: 1rem;
+    }
+}

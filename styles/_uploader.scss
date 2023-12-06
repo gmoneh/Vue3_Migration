@@ -1,0 +1,92 @@
+﻿#uploadFilename
+{
+	text-align: left;
+}
+
+#uploadFilename ul
+{
+	list-style: none;
+}
+
+.uploadedFile
+{
+	padding-top: 40px;
+	padding-bottom: 15px;
+	text-align: center;
+	color: $color-text-dark;
+	word-wrap: break-word;
+}
+.uploadedFile:before {
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 28px;
+    font-weight: 900;
+    top: 10px;
+    left: 50%;
+    margin-left: -0.5rem;
+    content: "\f15b";
+}
+
+.noFile
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.trash
+{
+    position: absolute;
+    box-sizing: content-box;
+	width: 30px;
+	height: 48px;
+    padding: 0px;
+}
+.trash:before {
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 28px;
+    top: 0;
+    left: 0;
+    content: "\f2ed";
+}
+
+.span2 input[type="file"] {
+    width: 80px;
+    color: $color-light-gray;
+    margin-top: 8px;
+}
+
+div[data-file-type] {
+    position: relative;
+
+    input[data-has-fake="true"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        min-height: 0;
+        opacity: 0.0;
+        filter: alpha(opacity=0);
+    }
+}
+
+.availableDropZone
+{
+	border: 2px dotted $color-spark-blue;
+}
+
+.chosenDropZone
+{
+	border: 2px solid $color-spark-blue;
+}
+
+h5.file-upload {
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.fileUploadWell {
+    border-width: 2px;
+	text-align: center;
+    position: relative;
+}

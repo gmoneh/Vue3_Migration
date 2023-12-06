@@ -1,0 +1,53 @@
+﻿aside.app-aside {
+    .stacked-menu {
+        margin-top: 15px;
+    }
+
+    .stacked-menu > .menu > .menu-item {
+        margin-bottom: 25px;
+
+        .menu-text {
+            // font-size: 1.1rem;
+            font-weight: 500;
+        }
+    }
+
+    .stacked-menu-has-collapsible.stacked-menu-has-compact {
+        .has-child {
+            &.has-open > .menu {
+                width: 250px;
+            }
+        }
+    }
+
+    .stacked-menu > .menu > .menu-item.has-active {
+        background-color: $color-active-gray;
+    }
+
+    .stacked-menu .has-child.has-active > .menu {
+        background-color: $color-active-gray;
+    }
+
+    .aside-header {
+        color: $color-spark-darkblue;
+    }
+
+    .aside-menu {
+        overflow: visible !important;
+    }
+    @include media-breakpoint-up(md) {
+        @include transition(width 200ms ease-in-out);
+    }
+}
+
+.app-aside.app-aside-compact {
+    @include media-breakpoint-up(md) {
+        width: $app-aside-width-compact;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .app-aside.app-aside-open {
+        z-index: $zindex-modal;
+    }
+}

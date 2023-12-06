@@ -1,0 +1,16 @@
+﻿@import "./ipp/custom";
+@import "../node_modules/bootstrap/scss/tables";
+
+.lsiTable {
+    .lsiTableHeader td {
+        font-weight: bold;
+    }
+
+}
+#InvoiceDetailsModal {
+    table td {
+        font-size: 0.7rem;
+        padding: 0.15rem;
+        text-align:left;
+    }
+}

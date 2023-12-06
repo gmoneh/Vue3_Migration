@@ -1,0 +1,56 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "include": [
+    "Areas/**/*.ts",
+    "Areas/**/*.tsx",
+    "Areas/**/*.vue",
+    "Scripts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "scripts/typings/*"
+  ],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "importHelpers": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "sourceRoot": "/src",
+    "baseUrl": ".",
+    "paths": {
+      "@ClientApp/*": [
+        "ClientApp/*"
+      ],
+      "@Account/*": [
+        "Areas/Account/Features/*"
+      ],
+      "@Tools/*": [
+        "Areas/Tools/Features/*"
+      ],
+      "@Portal/*": [
+        "Features/*"
+      ]
+    },
+    "outDir": "wwwroot/scripts",
+    "typeRoots": [
+      "./scripts/typings",
+      "./node_modules/@types",
+      "./node_modules/spin.js"
+    ]
+  }
+}

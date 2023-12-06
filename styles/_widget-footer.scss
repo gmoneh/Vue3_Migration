@@ -1,0 +1,61 @@
+.widget-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .footer-nugget {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        font-size: 0.875rem;
+
+        &.half-padded {
+            padding: 1rem;
+        }
+
+        .widget-footer-text {
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+        .footer-nugget-text {
+            height: 2.25rem;
+            display: inline-block;
+            vertical-align: text-top;
+        }
+
+        .dropdown.dropdown-menu-link {
+            padding: 0rem 0.625rem;
+        }
+    }
+
+    .page-option {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .dropdown.show {
+            display: inline-flex;
+        }
+    }
+
+    .btn.btn-link.dropdown-toggle {
+        padding: 0px;
+    }
+
+    .pager {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+    }
+}
+
+.dropdown-menu-link {
+    padding: 0.625rem 1rem;
+
+    .btn.btn-link {
+        font-size: 0.875rem;
+        @extend %normal-looking-link;
+    }
+}

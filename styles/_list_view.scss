@@ -1,0 +1,72 @@
+
+.lsi-list-view {
+    width: 100%;
+
+    .lsi-list-table {
+        thead > tr {
+            background-color: $table-accent-bg;
+
+            > th {
+                &[aria-sort] {
+                    &::before {
+                        content: "";
+                        opacity: 0.4;
+                    }
+
+                    &[aria-sort="ascending"]::before {
+                        content: "\0025B2";
+                    }
+
+                    &[aria-sort="descending"]::before {
+                        content: "\0025BC";
+                    }
+                }
+            }
+        }
+
+
+        .action-selector {
+            width: 100%;
+
+            &.btn-group {
+                &.show {
+                    display: inline-flex;
+                }
+            }
+
+            &.btn, .btn {
+                max-width: 9rem;
+                font-size: 80%;
+            }
+
+            &.btn, .btn:not(:last-child):not(.dropdown-toggle) {
+                padding-left: .1rem;
+                padding-right: .1rem;
+            }
+
+            .action-selector-toggle {
+            }
+        }
+
+        .action-icon {
+            text-decoration: none;
+            cursor: pointer;
+
+            &.disabled {
+                color: $secondary;
+            }
+        }
+    }
+
+
+    .lsi-list-item {
+        td {
+            vertical-align: middle;
+        }
+    }
+
+
+    .b-table-empty-row {
+        border-bottom: $gray-100 solid 1px;
+    }
+}

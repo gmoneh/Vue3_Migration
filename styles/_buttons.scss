@@ -1,0 +1,4 @@
+.btn-primary {
+    $primary-color: map-get($theme-colors, "primary");
+    @include button-variant($primary-color, $primary-color, $color-spark-darkblue);
+}

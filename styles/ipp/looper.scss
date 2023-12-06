@@ -1,0 +1,18 @@
+/*
+Customized version of the looper theme, using the LSI/IPP overrides
+*/
+
+// Include parts of Bootstrap
+//
+// Required
+
+@import "variables";
+@import "../looper/variable-bs-overrides";
+@import "looper_overrides";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../looper/variables";
+@import "../looper/mixins";
+
+@import "../looper/looper";

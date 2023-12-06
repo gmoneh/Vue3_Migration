@@ -1,0 +1,98 @@
+﻿
+nav.side-menu {
+    width: 100%;
+    padding-top: 25px;
+    background-color: $side-menu-bg;
+
+    > .side-submenu {
+        width: 100%;
+        max-width: 100%;
+
+        > .menu-item {
+            margin-bottom: 25px;
+            border-left: 4px solid $side-menu-bg;
+
+            &.active {
+                border-left: 4px solid $side-menu-active-border;
+            }
+        }
+    }
+
+    .menu-item {
+        width: 100%;
+        max-width: 100%;
+
+        > .side-submenu {
+            background-color: $side-menu-bg;
+            padding: $side-menu-padding;
+            padding-left: 3rem;
+            overflow: hidden;
+        }
+
+        > .nav-link {
+            color: $side-menu-color;
+            font-size: $side-menu-font-size;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: unset;
+            white-space: normal;
+
+            &.disabled {
+                color: darken($side-menu-color, 30%)
+            }
+
+            &:hover:not(.disabled) {
+                color: $side-menu-hover-color;
+                overflow: visible;
+            }
+
+            > .menu-icon {
+                width: 1.25em;
+                margin-right: .5em;
+                text-align: center;
+                font-size: $side-menu-icon-size;
+            }
+        }
+
+        &.active {
+            background-color: $side-menu-active-bg;
+
+            > .nav-link {
+                color: $side-menu-active-color;
+            }
+
+            > .side-submenu {
+                background-color: $side-menu-active-bg;
+            }
+
+            &.has-child {
+                > .nav-link {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+        &.compact {
+            width: $app-aside-width-compact;
+
+            .menu-item {
+                position: relative;
+
+                > .nav-link {
+                    overflow: visible;
+
+                    > .menu-text {
+                        display: none;
+                    }
+                }
+
+                > .side-submenu {
+                    display: none;
+                }
+            }
+        }
+    }
+}

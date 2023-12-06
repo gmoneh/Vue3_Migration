@@ -1,0 +1,61 @@
+﻿.modal-body {
+	form.has-required-fields {
+		[class*="col-"].col-form-label {
+			padding-left: 20px;
+		}
+	}
+}
+
+.payment-method-dialog {
+	/* max-height: 640px;
+	width: 520px; */
+	/* margin-left: -260px; */
+
+	.modal-header {
+		flex-direction: row;
+
+		.vertical-stack {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	.modal-body {
+		min-height: 630px;
+		position: relative;
+	}
+
+	#panelProviderCardInfo {
+		position: relative;
+/*		overflow-x: hidden;
+		overflow-y: hidden; */
+	}
+}
+
+.frameHtml, .frameBody {
+	background-color: transparent;
+}
+
+.full-page-outer {
+	height: 100%;
+	width: 100%;
+	display: table;
+	position: absolute;
+
+	.full-page-middle {
+		display: table-cell;
+		vertical-align: middle;
+
+		.full-page-inner {
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+
+			div.alert-container {
+				height: 160px;
+				margin: 0px 10px 0px 10px;
+				padding: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+﻿.captionPanel {
+    padding: 10px 12px;
+    margin: 0px;
+    background: $color-spark-darkblue;
+    color:#000000;
+    position: relative;
+
+
+    small {
+        font-size: .6rem;
+        text-transform: none;
+    }
+
+    h1, h2, h3, h4, h5 {
+        margin-bottom: 0px;
+        color: inherit;
+    }
+
+    .captionPanelRight {
+        float: right;
+        padding-left: 10px;
+    }
+
+    .captionPanelRight img {
+        padding-left: 5px;
+        position: relative;
+        top: -2px;
+    }
+
+    a.captionPanelRight {
+        color: $color-text-light;
+        font-size: 12px;
+    }
+
+    .captionDescription {
+        text-transform: none;
+        position: absolute;
+        font-size: 12px;
+        bottom: 9px;
+        right: 10px;
+    }
+
+    .captionPanelDark {
+        background: $color-background-gray;
+        color: $color-text-light;
+    }
+}
+
+.page-caption {
+    background:#ffffff;
+}

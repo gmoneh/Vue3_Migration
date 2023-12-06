@@ -1,0 +1,27 @@
+﻿@import "../common_variables";
+
+// Bootstrap overrides - IPP
+$color-light-gray: #BDBEC0;
+$color-spark-blue: #3A7C92;
+$color-spark-gold: #FFC20D;
+$color-spark-darkblue: #4E9EB8;
+$color-spark-lightblue: #C9DBE0;
+$color-enterprise-blue: #00529B;
+
+$primary: $color-spark-blue;
+$secondary: #ECECEF;
+$accents: $color-spark-darkblue;
+$link-color: #3A7C92;
+$component-active-bg: $primary;
+
+$color-darkblue-titleProgressBar: $link-color;
+$color-regblue-titleProgressBar: $color-spark-blue;
+// Overrides for custom select
+$custom-select-gradient-bg: linear-gradient(to bottom, $white, $secondary);
+
+$theme-colors: ( 
+    "gold": $color-spark-gold
+);
+
+$side-menu-color: $color-light-gray;
+$side-menu-active-border: $color-spark-blue;
