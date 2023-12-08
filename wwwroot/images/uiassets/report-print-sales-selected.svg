@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.224012793 0.400535962 55.9573461 0.400535962 55.9573461 74.150536 0.224012793 74.150536"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets-Copy-3" transform="translate(-133.000000, -304.000000)">
+            <g id="Group-17" transform="translate(133.000000, 303.000000)">
+                <g id="Group-25-Copy" transform="translate(24.000000, 26.000000)" stroke="#5BAF00" stroke-width="2">
+                    <polyline id="Stroke-1" stroke-linecap="round" stroke-linejoin="round" points="39 47.2711797 23.1111111 57.4216243 0 41.3953733"></polyline>
+                    <path d="M44.5,14.3510747 L44.5,16.354356" id="Stroke-3"></path>
+                    <path d="M24.5,26.3707629 L24.5,28.3740443" id="Stroke-4"></path>
+                    <g id="Group-24" transform="translate(0.000000, 0.328105)">
+                        <path d="M45.4850478,21.9289794 L53.6963087,16.6315302 C52.4494826,15.8260015 52.189787,14.6894738 53.6963087,13.7184457 L44.6643522,7.89081211 C43.1592652,8.86184027 41.3959174,8.69487615 40.1490913,7.89081211 L31.8904826,13.2204825" id="Stroke-6"></path>
+                        <path d="M21.2660609,20.0739202 L12.2900609,25.8664034 C13.7951478,26.8374316 13.5498,27.9681009 12.3044087,28.7707003 L21.3349304,34.5983339 C22.5803217,33.7942698 24.3307565,33.6375579 25.8372783,34.6085861 L34.3455391,29.1178099" id="Stroke-8"></path>
+                        <polyline id="Stroke-10" stroke-linecap="round" stroke-linejoin="round" points="38.7391304 32.2697703 22.9565217 42.4736213 0 27.827646 16.9677391 17.1082567"></polyline>
+                        <polyline id="Stroke-12" stroke-linecap="round" stroke-linejoin="round" points="27.3483913 10.29656 43.0434783 0.000439379259 66 14.6464147 50.1370435 24.9015266"></polyline>
+                        <polyline id="Stroke-14" stroke-linecap="round" stroke-linejoin="round" points="38.7391304 39.6185348 22.9565217 49.7960231 0 33.6854502"></polyline>
+                        <path d="M66,21.9689629 L50.2216957,32.1698847" id="Stroke-16" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <polyline id="Stroke-18" stroke-linecap="round" stroke-linejoin="round" points="38.7391304 54.2387332 22.9565217 64.4425842 0 48.3320114"></polyline>
+                        <path d="M66,36.6149382 L50.2173913,46.8187892" id="Stroke-20" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M66,29.2919506 L50.2173913,39.4958016" id="Stroke-22" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <polygon id="Stroke-5" stroke-linecap="round" stroke-linejoin="round" points="39.5356442 32.4096242 18 16.6682313 27.6926095 10.3445119 33.3865271 14.2108934 50 25.486071 50 48.1184789 39.5356442 55.4183429"></polygon>
+                </g>
+                <g id="Group-6">
+                    <g id="Group-5" transform="translate(0.000000, 0.844324)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-4"></g>
+                        <path d="M8.44470867,71.2846861 C5.53088386,71.2846861 3.16043222,68.9711816 3.16043222,66.1279204 L3.16043222,14.5645658 C4.5903964,15.7383132 6.4344484,16.4461974 8.44470867,16.4461974 L53.0209267,16.4461974 L53.0209267,28.4446244 L55.9573461,28.4446244 L55.9573461,15.0132187 C55.9573461,14.2218642 55.2998977,13.5803475 54.4891364,13.5803475 L8.44470867,13.5803475 C5.53088386,13.5803475 3.16043222,11.2668431 3.16043222,8.42336669 C3.16043222,5.57978273 5.53088386,3.26627828 8.44470867,3.26627828 L52.3629271,3.26627828 C53.1736884,3.26627828 53.8311369,2.6247616 53.8311369,1.83340712 C53.8311369,1.0421602 53.1736884,0.400535962 52.3629271,0.400535962 L8.44470867,0.400535962 C3.91167593,0.400535962 0.224012793,3.99954775 0.224012793,8.42336669 L0.224012793,66.1279204 C0.224012793,70.5515242 3.91167593,74.150536 8.44470867,74.150536 L16.4209417,74.150536 L16.4209417,71.2846861 L8.44470867,71.2846861 Z" id="Fill-3" stroke="#FFFFFF" stroke-width="0.75" fill="#5BAF00" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+                <path d="M8.45436702,8 C7.65124985,8 7,8.4477724 7,8.99996247 C7,9.55230267 7.65124985,10 8.45436702,10 L50.5455238,10 C51.3489685,10 52,9.55230267 52,8.99996247 C52,8.4477724 51.3489685,8 50.5455238,8 L8.45436702,8 Z" id="Fill-1" fill="#5BAF00"></path>
+            </g>
+        </g>
+    </g>
+</svg>

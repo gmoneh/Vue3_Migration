@@ -1,12 +1,41 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
-  "exclude": ["src/**/__tests__/*"],
+  "include": [
+    "env.d.ts", "src/**/*", "src/**/*.vue",
+    "ClientApp/**/*.ts",
+    "ClientApp/**/*.tsx",
+    "ClientApp/**/*.vue",
+    "Features/**/*.ts",
+    "Features/**/*.tsx",
+    "Features/**/*.vue",
+    "Areas/**/*.ts",
+    "Areas/**/*.tsx",
+    "Areas/**/*.vue",
+    "Scripts/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/__tests__/*",
+    "node_modules",
+    "scripts/typings/*"
+  ],
   "compilerOptions": {
+    "paths": {
+      "@ClientApp/*": [
+        "ClientApp/*"
+      ],
+      "@Account/*": [
+        "Areas/Account/Features/*"
+      ],
+      "@Tools/*": [
+        "Areas/Tools/Features/*"
+      ],
+      "@Portal/*": [
+        "Features/*"
+      ],
+      "@/*": ["./src/*"]
+    },
     "composite": true,
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "verbatimModuleSyntax": false
   }
 }

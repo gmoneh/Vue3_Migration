@@ -1,0 +1,8 @@
+bundles/**
+libs/**
+styles/**/*.css
+styles/**/*.css.map
+scripts/**/*.js
+scripts/**/*.jsx
+scripts/**/*.js.map
+scripts/**/*.jsx.map

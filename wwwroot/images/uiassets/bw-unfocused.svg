@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="95px" viewBox="0 0 70 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Phase-2---Title-Setup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="16.-Add-a-Book---Print-Paperback" transform="translate(-400.000000, -681.000000)">
+            <g id="Group-9" transform="translate(401.000000, 682.000000)">
+                <polygon id="Stroke-1" stroke="#C8CACC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="68 29.5909091 68 0 12.75 0 0 12.6818182 0 93 68 93 68 67.6363636"></polygon>
+                <polyline id="Stroke-3" stroke="#C8CACC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="4 16 16 16 16 4"></polyline>
+                <path d="M11,35 L57,35 C58.1045695,35 59,35.8954305 59,37 L59,71 C59,72.1045695 58.1045695,73 57,73 L11,73 C9.8954305,73 9,72.1045695 9,71 L9,37 C9,35.8954305 9.8954305,35 11,35 Z" id="Rectangle" fill-opacity="0.8" fill="#DCDEE0"></path>
+                <path d="M15,69 C15,69 18.6894587,64.0781893 26.0683761,54.2345679 L32.3931624,62.9012346 L40.9316239,43 L52,69 C27.3333333,69 15,69 15,69 Z" id="Path-2" fill-opacity="0.5" fill="#A0A2A4"></path>
+                <circle id="Oval-2" fill="#FFFFFF" cx="20.5" cy="46.5" r="5.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

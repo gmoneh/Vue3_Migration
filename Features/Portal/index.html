@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="app">
+        <router-link :to="{name: 'Portal'}" >Portal</router-link>
+        <router-link :to="{name: 'Dashboard'}" >Dashboard</router-link>
+        <router-link :to="'not/found'" >Not found</router-link>
+        <router-view />
+    </div>
+    <script type="module" src="portal_main.ts"></script>
+  </body>
+</html>
