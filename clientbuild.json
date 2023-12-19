@@ -153,25 +153,23 @@
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/ipp/portal.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/ipp/portal.bundle.css",
       "inputFiles": [
         "wwwroot/styles/ipp/bootstrap.css",
-        "wwwroot/libs/font-awesome/css/all.css",
-        "wwwroot/libs/open-iconic/css/open-iconic-bootstrap.css",
+        "node_modules/@fortawesome/fontawesome-free/css/all.css",
+        "node_modules/open-iconic/font/css/open-iconic-bootstrap.css",
         "wwwroot/styles/ipp/looper.css",
-        "wwwroot/styles/componentstyles.bundle.css",
         "wwwroot/styles/ipp/nonsecure_portal.css",
         "wwwroot/styles/ipp/non-secure-custom.css"
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/lsi/portal.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/lsi/portal.bundle.css",
       "inputFiles": [
         "wwwroot/styles/lsi/bootstrap.css",
-        "wwwroot/libs/font-awesome/css/all.css",
-        "wwwroot/libs/open-iconic/css/open-iconic-bootstrap.css",
+        "node_modules/@fortawesome/fontawesome-free/css/all.css",
+        "node_modules/open-iconic/font/css/open-iconic-bootstrap.css",
         "wwwroot/styles/lsi/looper.css",
-        "wwwroot/styles/componentstyles.bundle.css",
         "wwwroot/styles/lsi/nonsecure_portal.css",
         "wwwroot/styles/lsi/lp-style.css",
         "wwwroot/styles/lsi/fonts.css"
@@ -179,49 +177,45 @@
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/ipsuk/portal.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/ipsuk/portal.bundle.css",
       "inputFiles": [
         "wwwroot/styles/ipsuk/bootstrap.css",
-        "wwwroot/libs/font-awesome/css/all.css",
-        "wwwroot/libs/open-iconic/css/open-iconic-bootstrap.css",
+        "node_modules/@fortawesome/fontawesome-free/css/all.css",
+        "node_modules/open-iconic/font/css/open-iconic-bootstrap.css",
         "wwwroot/styles/ipsuk/looper.css",
-        "wwwroot/styles/componentstyles.bundle.css",
         "wwwroot/styles/ipsuk/nonsecure_portal.css",
         "wwwroot/styles/ipsuk/lp-style.css",
         "wwwroot/styles/ipsuk/fonts.css"
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/ipp/portal-tools.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/ipp/portal-tools.bundle.css",
       "inputFiles": [
         "wwwroot/styles/ipp/non-secure-tools.css",
         "wwwroot/styles/ipp/non-secure-custom.css"
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/lsi/portal-tools.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/lsi/portal-tools.bundle.css",
       "inputFiles": [
         "wwwroot/styles/lsi/non-secure-tools.css"
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/ipsuk/portal-tools.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/ipsuk/portal-tools.bundle.css",
       "inputFiles": [
         "wwwroot/styles/ipsuk/lp-style.css"
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/ipp/theme.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/ipp/theme.bundle.css",
       "inputFiles": [
         "wwwroot/styles/ipp/bootstrap.css",
-        "wwwroot/libs/font-awesome/css/all.css",
-        "wwwroot/libs/open-iconic/css/open-iconic-bootstrap.css",
-        "node_modules/spin.js/spin.css",
-        "node_modules/flatpickr/dist/flatpickr.css",
+        "node_modules/@fortawesome/fontawesome-free/css/all.css",
+        "node_modules/open-iconic/font/css/open-iconic-bootstrap.css",
         "node_modules/vue2-dropzone/dist/vue2Dropzone.min.css",
         "wwwroot/styles/ipp/looper.css",
         "wwwroot/styles/cookiebar.css",
-        "wwwroot/styles/componentstyles.bundle.css",
         "node_modules/vue2-animate/dist/vue2-animate.css",
         "node_modules/@splidejs/splide/dist/css/splide.min.css",
         "node_modules/vue-tel-input/src/assets/component.css",
@@ -229,17 +223,14 @@
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/lsi/theme.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/lsi/theme.bundle.css",
       "inputFiles": [
         "wwwroot/styles/lsi/bootstrap.css",
-        "wwwroot/libs/font-awesome/css/all.css",
-        "wwwroot/libs/open-iconic/css/open-iconic-bootstrap.css",
-        "node_modules/spin.js/spin.css",
-        "node_modules/flatpickr/dist/flatpickr.css",
+        "node_modules/@fortawesome/fontawesome-free/css/all.css",
+        "node_modules/open-iconic/font/css/open-iconic-bootstrap.css",
         "node_modules/vue2-dropzone/dist/vue2Dropzone.min.css",
         "wwwroot/styles/lsi/looper.css",
         "wwwroot/styles/cookiebar.css",
-        "wwwroot/styles/componentstyles.bundle.css",
         "node_modules/vue2-animate/dist/vue2-animate.css",
         "node_modules/@splidejs/splide/dist/css/splide.min.css",
         "node_modules/vue-tel-input/src/assets/component.css",
@@ -247,174 +238,16 @@
       ]
     },
     {
-      "outputFileName": "wwwroot/bundles/ipsuk/theme.bundle.css",
+      "outputFileName": "wwwroot/bundles/styles/ipsuk/theme.bundle.css",
       "inputFiles": [
         "wwwroot/styles/ipsuk/bootstrap.css",
-        "wwwroot/libs/font-awesome/css/all.css",
-        "wwwroot/libs/open-iconic/css/open-iconic-bootstrap.css",
-        "node_modules/spin.js/spin.css",
-        "node_modules/flatpickr/dist/flatpickr.css",
+        "node_modules/@fortawesome/fontawesome-free/css/all.css",
+        "node_modules/open-iconic/font/css/open-iconic-bootstrap.css",
         "node_modules/vue2-dropzone/dist/vue2Dropzone.min.css",
         "wwwroot/styles/ipsuk/looper.css",
         "wwwroot/styles/cookiebar.css",
-        "wwwroot/styles/componentstyles.bundle.css",
         "node_modules/vue2-animate/dist/vue2-animate.css",
         "node_modules/@splidejs/splide/dist/css/splide.min.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/froala-editor.bundle.js",
-      "inputFiles": [
-        "node_modules/froala-editor/js/froala_editor.min.js",
-        "node_modules/froala-editor/js/plugins/align.min.js",
-        "node_modules/froala-editor/js/plugins/colors.min.js",
-        "node_modules/froala-editor/js/plugins/font_family.min.js",
-        "node_modules/froala-editor/js/plugins/font_size.min.js",
-        "node_modules/froala-editor/js/plugins/lists.min.js",
-        "node_modules/froala-editor/js/plugins/quote.min.js",
-        "node_modules/froala-editor/js/plugins/code_view.min.js",
-        "node_modules/froala-editor/js/plugins/inline_style.min.js",
-        "node_modules/froala-editor/js/plugins/paragraph_style.min.js",
-        "node_modules/froala-editor/js/plugins/paragraph_format.min.js",
-        "node_modules/froala-editor/js/plugins/image.min.js",
-        "node_modules/froala-editor/js/plugins/emoticons.min.js",
-        "node_modules/froala-editor/js/plugins/special_characters.min.js"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/froala_styles.bundle.css",
-      "inputFiles": [
-        "node_modules/froala-editor/css/froala_editor.pkgd.min.css",
-        "node_modules/froala-editor/css/froala_style.min.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/ipp/TitleSearch.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/lsi/SearchCriteria.css",
-        "wwwroot/styles/ipp/TitleSearch.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/lsi/TitleSearch.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/lsi/SearchCriteria.css",
-        "wwwroot/styles/lsi/TitleSearch.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/ipsuk/TitleSearch.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/ipsuk/SearchCriteria.css",
-        "wwwroot/styles/ipsuk/TitleSearch.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/AddressEditor.bundle.js",
-      "inputFiles": [
-        "wwwroot/scripts/Areas/Account/Features/AddressEditor/AddressEditor.js",
-        "wwwroot/scripts/Areas/Account/Features/AddressEditor/AddressValidator_legacy.js",
-        "wwwroot/scripts/Areas/Account/Features/AddressBook/AddressSearchCriteria.js"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/PublisherCompensation.bundle.js",
-      "inputFiles": [
-        "wwwroot/scripts/Areas/Account/Features/AddressEditor/AddressEditor.js",
-        "wwwroot/scripts/Areas/Account/Features/AddressEditor/AddressValidator_legacy.js",
-        "wwwroot/scripts/Areas/Account/Features/PublisherCompensation/PublisherCompensation.js"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/SIBIConfig.bundle.js",
-      "inputFiles": [
-        "wwwroot/scripts/Areas/Account/Features/SIBIConfig/SIBIConfig.js"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/colorpicker.bundle.js",
-      "inputFiles": [
-        "node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/fileupload.bundle.js",
-      "inputFiles": [
-        "node_modules/lsi-jquery-plugins/jquery.iframe-transport.js",
-        "node_modules/lsi-jquery-plugins/jquery.fileupload.js",
-        "node_modules/lsi-jquery-plugins/jquery.lsiupload.js"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/ipp/OrderEdit.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/ipp/OrderEdit.css",
-        "wwwroot/styles/AddressEditor.css",
-        "wwwroot/styles/AddressSelector.css",
-        "wwwroot/styles/AddressBook.css",
-        "wwwroot/styles/OrderAddressSelector.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/lsi/OrderEdit.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/lsi/OrderEdit.css",
-        "wwwroot/styles/AddressEditor.css",
-        "wwwroot/styles/AddressSelector.css",
-        "wwwroot/styles/AddressBook.css",
-        "wwwroot/styles/OrderAddressSelector.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/ipsuk/OrderEdit.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/ipsuk/OrderEdit.css",
-        "wwwroot/styles/AddressEditor.css",
-        "wwwroot/styles/AddressSelector.css",
-        "wwwroot/styles/AddressBook.css",
-        "wwwroot/styles/OrderAddressSelector.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/OrderEdit.bundle.js",
-      "inputFiles": [
-        "wwwroot/scripts/Areas/Account/Features/AddressEditor/AddressValidator_legacy.js",
-        "wwwroot/scripts/Areas/Account/Features/AddressBook/AddressSearchCriteria.js",
-        "wwwroot/scripts/Areas/Orders/Features/EditOrder/ShipmentChoices.js"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/W2POrders.bundle.js",
-      "inputFiles": [
-        "wwwroot/scripts/Areas/Orders/CancelOrder.js",
-        "wwwroot/scripts/Areas/Orders/MyOrderStatus.js"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/lsi/ReportDisplay.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/lsi/ReportDisplay.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/ipp/ReportDisplay.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/ipp/ReportDisplay.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/ipsuk/ReportDisplay.bundle.css",
-      "inputFiles": [
-        "wwwroot/styles/ipsuk/ReportDisplay.css"
-      ]
-    },
-    {
-      "outputFileName": "wwwroot/bundles/ReportCommon.bundle.js",
-      "inputFiles": [
-        "wwwroot/scripts/Areas/ClassicReports/ReportsCommon.js",
-        "wwwroot/scripts/Areas/ClassicReports/PeriodEntry.js",
-        "wwwroot/scripts/Areas/ClassicReports/Validations.js",
-        "wwwroot/scripts/Areas/ClassicReports/OutputOptions.js"
       ]
     }
   ]

@@ -1,0 +1,4 @@
+- vite.config.js
+- New app mounting logic (ClientApp/App.ts)
+- Type definition bootstrap-vue
+

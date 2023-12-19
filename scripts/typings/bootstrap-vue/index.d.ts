@@ -1,4 +1,5 @@
-import { BvTableField as original } from 'bootstrap-vue';
+import { BvTableField as original, BvModal, BvToast } from 'bootstrap-vue';
+import {Pinia, StoreGeneric} from "pinia";
 
 declare module 'bootstrap-vue/src/components/table' {
     
@@ -15,5 +16,17 @@ declare module 'bootstrap-vue/src/components/modal' {
         hide: Function;
         ok: Function;
         visible: Boolean;
+    }
+}
+
+// TODO: figure out why it cannot be 'vue'
+// @ts-ignore: works on Vue 3, fails in Vue 2
+declare module '@vue/runtime-core' {
+    export interface ComponentCustomProperties {
+        /**
+         * BootstrapVue extensions
+         */
+        readonly $bvModal: BvModal
+        readonly $bvToast: BvToast
     }
 }

@@ -1,14 +1,18 @@
 import Vue, { createApp, Plugin } from 'vue';
 import type { ComponentOptions, App } from 'vue';
-import VueRx from 'vue-rx';
 import { BootstrapVue, BootstrapVueIcons, BIcon } from 'bootstrap-vue'
 import VueRouter, {createRouter, createWebHistory, RouterOptions, _RouteRecordBase as RouteBase, RouteRecordRaw as Route, RouteLocation } from "vue-router";
+import { createPinia } from 'pinia';
 import HelpIcon from "./directives/HelpIcon";
 import RequiredIcon from "./directives/RequiredIcon";
 import * as Filters from "./filters/filters";
 import * as Formatters from "./utils/formatters";
 
 // Deprecated in Vue 3
+// @ts-ignore Here only to have WebStorm register these directives
+Vue.directive('lsi-help-icon', HelpIcon);
+// @ts-ignore
+Vue.directive('lsi-required-icon', RequiredIcon);
 Vue.filter('dashify', Filters.dashify);
 Vue.filter('shortDate', Filters.shortDate);
 Vue.filter('longDate', Filters.longDate);
@@ -22,26 +26,29 @@ Vue.filter('percentage', Formatters.formatPercentage);
 
 
 
-type AppInitializationFunction<T> = (opt?: ComponentOptions<Vue>) => App<T>;
+type AppCreationFunction<T> = (opt?: ComponentOptions<Vue>) => App<T>;
+type AppInitializationFunction<T> = (theApp: App<T>) => App<T>;
 
 export interface StartAppOptions {
     router?: Partial<RouterOptions>;
     component?: ComponentOptions<Vue>;
+    createFunction?: AppCreationFunction<Element>;
     initFunction?: AppInitializationFunction<Element>;
 }
 
 
-export function initializeApp(componentOptions?: ComponentOptions<Vue>) {
-    let appRoot = createApp({
+function instantiateApp(componentOptions?: ComponentOptions<Vue>) {
+    return createApp({
         el: "div.app",
         ...componentOptions,
     });
+}
+
+export function initializeApp(appRoot: App<Element>) {
     // Alternate way of initializing for Vue 3
-    appRoot.use((theApp) => {
-        VueRx(Vue);
-    });
     appRoot.use(BootstrapVue as unknown as Plugin);
     appRoot.use(BootstrapVueIcons as unknown as Plugin);
+    appRoot.use(createPinia());
     appRoot.directive('lsi-help-icon', HelpIcon);
     appRoot.directive('lsi-required-icon', RequiredIcon);
     appRoot.component('b-icon', BIcon);
@@ -85,8 +92,10 @@ export function initializeRouter(theApp: App<Element>, options: Partial<RouterOp
 export function startApp(options?: StartAppOptions)
 {
     let initializeOptions: ComponentOptions<Vue> | undefined = options?.component;
-    let initApp = options?.initFunction || initializeApp;
-    let theApp = (initApp)? initApp(initializeOptions) : null;
+    let _createApp = options?.createFunction || instantiateApp;
+    let _initApp = options?.initFunction || initializeApp;
+    let theApp = _createApp(initializeOptions);
+    theApp = (_initApp)? _initApp(theApp) : theApp;
     if (theApp) {
         if (options && options.router)
         {

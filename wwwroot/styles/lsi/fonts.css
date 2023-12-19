@@ -1,0 +1,105 @@
+﻿/* MODUM FONT */
+
+@font-face {
+	font-family: 'modum-extrabold';
+	src: url('modum-extrabold-webfont.woff2') format('woff2'), url('modum-extrabold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'modum-bold';
+	src: url('modum-bold-webfont.eot');
+	src: url('modum-bold-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('modum-bold-webfont.woff2') format('woff2'), url('modum-bold-webfont.woff') format('woff'), url('modum-bold-webfont.ttf') format('truetype'), url('modum-bold-webfont.svg#modumbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'modum-regular';
+	src: url('modum_regular_regular-webfont.eot');
+	src: url('modum_regular_regular-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('modum_regular_regular-webfont.woff2') format('woff2'), url('modum_regular_regular-webfont.woff') format('woff'), url('modum_regular_regular-webfont.ttf') format('truetype'), url('modum_regular_regular-webfont.svg#modumregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'modum-medium';
+	src: url('modum-medium-webfont.eot');
+	src: url('modum-medium-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('modum-medium-webfont.woff2') format('woff2'), url('modum-medium-webfont.woff') format('woff'), url('modum-medium-webfont.ttf') format('truetype'), url('modum-medium-webfont.svg#modummedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'modum-light';
+	src: url('modum-light-webfont.eot');
+	src: url('modum-light-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('modum-light-webfont.woff2') format('woff2'), url('modum-light-webfont.woff') format('woff'), url('modum-light-webfont.ttf') format('truetype'), url('modum-light-webfont.svg#modumlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'modum-italic';
+	src: url('modum-italic-webfont.eot');
+	src: url('modum-italic-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('modum-italic-webfont.woff2') format('woff2'), url('modum-italic-webfont.woff') format('woff'), url('modum-italic-webfont.ttf') format('truetype'), url('modum-italic-webfont.svg#modumitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+/* MULLER FONT */
+
+@font-face {
+	font-family: 'muller-italic';
+	src: url('mullerregularitalic-webfont.eot');
+	src: url('mullerregularitalic-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('mullerregularitalic-webfont.woff2') format('woff2'), url('mullerregularitalic-webfont.woff') format('woff'), url('mullerregularitalic-webfont.ttf') format('truetype'), url('mullerregularitalic-webfont.svg#mullerregular_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'muller-regular';
+	src: url('mullerregular-webfont.eot');
+	src: url('mullerregular-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('mullerregular-webfont.woff2') format('woff2'), url('mullerregular-webfont.woff') format('woff'), url('mullerregular-webfont.ttf') format('truetype'), url('mullerregular-webfont.svg#muller_regularregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'muller-light';
+	src: url('mullerlight-webfont.eot');
+	src: url('mullerlight-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('mullerlight-webfont.woff2') format('woff2'), url('mullerlight-webfont.woff') format('woff'), url('mullerlight-webfont.ttf') format('truetype'), url('mullerlight-webfont.svg#mullerlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'muller-extrabold';
+	src: url('mullerextrabold-webfont.woff2') format('woff2'), url('mullerextrabold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'muller-bold';
+	src: url('mullerbold-webfont.eot');
+	src: url('mullerbold-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('mullerbold-webfont.woff2') format('woff2'), url('mullerbold-webfont.woff') format('woff'), url('mullerbold-webfont.ttf') format('truetype'), url('mullerbold-webfont.svg#mullerbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'muller-medium';
+	src: url('mullermedium-webfont.eot');
+	src: url('mullermedium-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'), url('mullermedium-webfont.woff2') format('woff2'), url('mullermedium-webfont.woff') format('woff'), url('mullermedium-webfont.ttf') format('truetype'), url('mullermedium-webfont.svg#mullermedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

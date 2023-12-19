@@ -32,10 +32,19 @@
       "@Portal/*": [
         "Features/*"
       ],
+      "@Models/*": [
+        "Features/Models/*"
+      ],
+      "@Store/*": [
+        "Features/Store/*"
+      ],
       "@/*": ["./src/*"]
     },
     "composite": true,
     "baseUrl": ".",
-    "verbatimModuleSyntax": false
+    "verbatimModuleSyntax": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true
   }
 }

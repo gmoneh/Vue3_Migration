@@ -39,6 +39,7 @@ export default defineConfig(({command, mode}) => ({
     vueJsx(),
     tsconfigPaths({
       root: __dirname,
+      projects: ['tsconfig.app.json'],
       loose: true
     })
   ],
@@ -59,7 +60,7 @@ export default defineConfig(({command, mode}) => ({
         dir: 'wwwroot/bundles',
         entryFileNames: '[name].bundle.js',
         assetFileNames: (asset) => {
-          return "style/" + asset.name;
+          return "styles/" + asset.name;
         },
         format: 'esm',
         sourcemap: isDebug(mode)

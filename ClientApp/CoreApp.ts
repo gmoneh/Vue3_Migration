@@ -2,15 +2,16 @@ import Vue, { ComponentOptions, App as VueApp } from 'vue';
 import * as App from "./App";
 import {isSupportSession, User} from "./identity/user";
 
-function initializeCoreLayout(componentOptions?: ComponentOptions<Vue>)
+function initializeCoreLayout(theApp: VueApp)
 {
+    App.initializeApp(theApp);
     /*
     Vue.component('app-aside', AppAside);
     Vue.component('app-header', AppHeader);
     Vue.component('app-main', AppMain);
     Vue.component('app-header-simple', AppHeaderSimple);
-*/
-    return App.initializeApp(componentOptions);
+    */
+    return theApp;
 }
 
 

@@ -3,13 +3,10 @@
     dest = require("gulp-dest"),
     rename = require("gulp-rename"),
     minimist = require("minimist"),
-    async = require('async'),
-    vinylPaths = require("vinyl-paths"),
+    vinylPaths = import("vinyl-paths"),
     colors = require("ansi-colors"),
-    tscompiler = require('typescript'),
     concat = require("gulp-concat"),
     print = require("gulp-print").default,
-    htmlmin = require("gulp-htmlmin"),
     uglify = require("gulp-uglify-es").default,
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
@@ -22,12 +19,7 @@
     glob = require("glob"),
     sass = require("gulp-dart-sass"),
     sourcemaps = require("gulp-sourcemaps"),
-    ts = require("gulp-typescript"),
-    git = require("gulp-git"),
-    //	useTsConfig = require("gulp-use-tsconfig"),
-    //	ListStream = require('list-stream'),
-
-    rollup = require('rollup');
+    ts = require("gulp-typescript")
 
 
 let buildconfig = require("./clientbuild.json");
@@ -38,7 +30,7 @@ let styleconfig = buildconfig.styles.compile;
 let libsconfig = buildconfig.libs;
 let environment = process.env.NODE_ENV // Expected "development" or "production";
 
-const tsConfigFile = "tsconfig.json";
+const tsConfigFile = "tsconfig.app.json";
 var tsProject = ts.createProject(tsConfigFile);
 
 var regex = {
@@ -48,27 +40,6 @@ var regex = {
 };
 
 var args = minimist(process.argv.slice(2));
-
-gulp.task('set-dev-node-env', function(done) {
-    process.env.NODE_ENV = 'development';
-    done();
-});
-
-gulp.task('set-prod-node-env', function(done) {
-    process.env.NODE_ENV = 'production';
-    done();
-});
-
-gulp.task('bundle:modules', gulp.series(
-        'set-prod-node-env',
-        rollup_modules(false)
-    )
-);
-gulp.task('bundle:modules:development', gulp.series(
-        'set-dev-node-env',
-        rollup_modules(true)
-    )
-);
 
 gulp.task('bundle:styles', gulp.series(
     gulp.parallel(...compileSassFiles()),
@@ -98,18 +69,7 @@ gulp.task("bundle:js", gulp.parallel(...bundlejs(true)));
 
 gulp.task("min:js", gulp.parallel(...bundlejs(false)));
 
-
-gulp.task("min:html", function (done) {
-    getBundles(regex.html).map(function (bundle) {
-        return gulp.src(bundle.inputFiles, { base: "." })
-            .pipe(concat(bundle.outputFileName))
-            .pipe(htmlmin({ collapseWhitespace: true, minifyCSS: true, minifyJS: true }))
-            .pipe(gulp.dest("."));
-    });
-    done();
-});
-
-gulp.task("min", gulp.parallel('bundle:js', 'min:js', 'bundle:styles', 'min:html'));
+gulp.task("min", gulp.parallel('bundle:js', 'min:js', 'bundle:styles'));
 
 gulp.task("tsc", function () {
     return tsProject.src()
@@ -202,24 +162,10 @@ gulp.task("deepclean", gulp.parallel("clean", function (done) {
 }));
 
 
-gulp.task("build:production", gulp.series('copylibs', 'tsc', 'bundle:modules', 'min'));
-gulp.task("build:development", gulp.series('copylibs', 'tsc', 'bundle:modules:development', 'bundle:styles:development', 'bundle:js'));
+gulp.task("build:production", gulp.series('copylibs', 'tsc', 'min'));
+gulp.task("build:development", gulp.series('copylibs', 'tsc', 'bundle:styles:development', 'bundle:js'));
 gulp.task("default", gulp.series("build:production"));
 
-
-gulp.task("watch", function () {
-    getBundles(regex.js).forEach(function (bundle) {
-        gulp.watch(bundle.inputFiles, ["min:js"]);
-    });
-
-    getBundles(regex.css).forEach(function (bundle) {
-        gulp.watch(bundle.inputFiles, ["min:css"]);
-    });
-
-    getBundles(regex.html).forEach(function (bundle) {
-        gulp.watch(bundle.inputFiles, ["min:html"]);
-    });
-});
 
 
 function getAllSassFiles() {
@@ -444,19 +390,3 @@ function getTsPathAliases() {
     return newPaths;
 }
 
-
-function rollup_modules(debug) {
-    return () => {
-        let requireesm = require('esm')(module);
-        let rollupConfigs = requireesm("./rollup.config");
-        let rollupConfig = rollupConfigs.default[0];
-        clean_modules();
-        return rollup.rollup({
-            input: rollupConfig.input,
-            plugins: rollupConfig.plugins
-        })
-        .then(bundle => {
-            return bundle.write(rollupConfig.output)
-        });
-    }
-}
