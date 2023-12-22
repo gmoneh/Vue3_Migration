@@ -16,7 +16,7 @@ export function hasNumber$() {
     let counter = 50;
     let report = concat(
         of(counter),
-        interval(5000).pipe(
+        interval(50000).pipe(
             map(i => {
                 counter += 1;
                 return counter;
@@ -52,3 +52,11 @@ export default class DisplayNumber extends Vue {
 
 }
 </script>
+
+<style lang="scss">
+
+.portal-number {
+    font-family: "Century Gothic";
+    color: pink;
+}
+</style>

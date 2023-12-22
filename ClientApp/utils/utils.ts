@@ -1,6 +1,9 @@
 import { isNil, reduce } from "ramda";
 import moment from "moment";
-import { strict } from "assert";
+
+export function capitalizeFirstLetter(s: string) {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
 
 export function toQueryString(o: {[k: string]: any})
 {

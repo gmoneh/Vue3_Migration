@@ -2,7 +2,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { resolve } from 'path'
 import { PreRenderedAsset, RenderedChunk } from 'rollup';
 
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import tsconfigPaths from 'vite-tsconfig-paths'
@@ -14,6 +14,7 @@ let modulesconfig = buildconfig.modules;
 let modulestyles = buildconfig.styles.modules;
 let styleconfig = buildconfig.styles.compile;
 let libsconfig = buildconfig.libs;
+// process.env.NODE_ENV = 'production';
 let environment = process.env.NODE_ENV // Expected "development" or "production";
 
 let isDebug = (mode: string) => mode === "development";
@@ -54,6 +55,7 @@ export default defineConfig(({command, mode}) => ({
     }
   },
   build: {
+    sourcemap: true,
     rollupOptions: {
       input: modulesconfig,
       output: {

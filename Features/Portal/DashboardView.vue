@@ -1,6 +1,6 @@
 <template>
   <main>
-      <h1>Dashboard View</h1>
+      <h1 class="dashboard-title">Dashboard View</h1>
       <display-number :parent-num="20"/>
   </main>
 </template>
@@ -22,3 +22,11 @@ export default toNative(DashboardView)
 
 </script>
 
+
+<style lang="scss">
+
+.dashboard-title {
+    color: darkorange;
+}
+
+</style>

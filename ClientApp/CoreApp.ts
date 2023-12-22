@@ -1,10 +1,10 @@
 import Vue, { ComponentOptions, App as VueApp } from 'vue';
+import { compose, identity } from "ramda";
 import * as App from "./App";
 import {isSupportSession, User} from "./identity/user";
 
 function initializeCoreLayout(theApp: VueApp)
 {
-    App.initializeApp(theApp);
     /*
     Vue.component('app-aside', AppAside);
     Vue.component('app-header', AppHeader);
@@ -18,7 +18,7 @@ function initializeCoreLayout(theApp: VueApp)
 export function startApp(options?: App.StartAppOptions)
 {
     if (!options) options = {};
-    options.initFunction = options.initFunction || initializeCoreLayout;
+    options.initFunction = compose(options.initFunction ?? identity, initializeCoreLayout);
     options.component = {
         provide() {
             return {

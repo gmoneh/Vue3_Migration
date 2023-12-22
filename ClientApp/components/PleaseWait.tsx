@@ -1,4 +1,4 @@
-import {FunctionalComponent, h, SetupContext} from 'vue';
+import Vue, {FunctionalComponent, h, SetupContext} from 'vue';
 
 
 type PleaseWaitProps = {
