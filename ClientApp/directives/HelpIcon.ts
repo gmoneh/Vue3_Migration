@@ -13,7 +13,7 @@ export function onHelpIconClick(event: Event)
     if (!helpTopicId) return;
     const h$ = ajax({
         url: `/help/Topic/${helpTopicId}`,
-        responseType: 'html'
+        responseType: 'document'
     });
     h$.subscribe((response) => {
         let popover = new BPopover({
