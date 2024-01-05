@@ -10,6 +10,7 @@
 import { of, interval, concat, map } from 'rxjs'
 import {Vue, Component, Prop, Inject, Setup} from "vue-facing-decorator";
 import { useObservable } from "@vueuse/rxjs";
+import {WatchObservable} from "vue-rx";
 
 
 export function hasNumber$() {
@@ -27,11 +28,13 @@ export function hasNumber$() {
 }
 
 @Component({
+    /*
     subscriptions() {
         return {
             anotherNum: hasNumber$()
         }
     }
+     */
 })
 export default class DisplayNumber extends Vue {
     num: number = 0;

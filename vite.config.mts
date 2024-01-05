@@ -56,6 +56,7 @@ export default defineConfig(({command, mode}) => ({
   },
   build: {
     sourcemap: true,
+    minify: isDebug(mode)? false : 'esbuild',
     rollupOptions: {
       input: modulesconfig,
       output: {

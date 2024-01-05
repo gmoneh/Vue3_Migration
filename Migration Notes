@@ -1,4 +1,7 @@
+- Delete package-lock.json
+- New npm packages
 - vite.config.js
+- Changes to tsconfig, adding app and node references
 - New app mounting logic (ClientApp/App.ts)
 - Type definition bootstrap-vue
 

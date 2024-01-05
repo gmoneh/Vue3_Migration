@@ -1,8 +1,7 @@
 import { BvTableField as original, BvModal, BvToast } from 'bootstrap-vue';
-import {Pinia, StoreGeneric} from "pinia";
 
-declare module 'bootstrap-vue/src/components/table' {
-    
+declare module 'bootstrap-vue' {
+
     interface BvTableField {
         sortExpression?: string
     }
@@ -26,6 +25,7 @@ declare module '@vue/runtime-core' {
         /**
          * BootstrapVue extensions
          */
+
         readonly $bvModal: BvModal
         readonly $bvToast: BvToast
     }

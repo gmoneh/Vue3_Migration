@@ -10,11 +10,6 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
-    "typeRoots": [
-      "./scripts/typings",
-      "./node_modules/@types",
-      "./node_modules/spin.js"
-    ],
     "outDir": "wwwroot/scripts",
     "target": "ESNext",
     "module": "esnext",

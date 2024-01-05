@@ -1,6 +1,7 @@
 import Vue from 'vue';
+import { compose } from "ramda";
 import type { RouterOptions } from 'vue-router';
-import { initializeStore } from "@ClientApp/App";
+import { initializeStore, addRxJS } from "@ClientApp/App";
 import * as App from "@ClientApp/PortalApp";
 import PortalRoutes from './portal_routes';
 import PortalView from './PortalView.vue';
@@ -21,7 +22,7 @@ const routerConfig: Partial<RouterOptions> = {
 }
 
 App.startApp({
-    initFunction: initializeStore,
+    initFunction: compose(initializeStore, addRxJS),
     router: routerConfig
 });
 

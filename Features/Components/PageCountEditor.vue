@@ -27,7 +27,7 @@ export default class PageCountEditor extends Vue {
     titleStore!: ReturnType<typeof useTitleStore>;
 
     get pages() {
-        return this.titleStore.title? this.titleStore.title.pageCount : "";
+        return this.titleStore.title? this.titleStore.title.pageCount.toString() : "";
     }
 
     set pages (val: string) {

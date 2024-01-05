@@ -5,6 +5,7 @@ import { compose, identity } from "ramda";
 import { BootstrapVue, BootstrapVueIcons, BIcon } from 'bootstrap-vue'
 import VueRouter, {createRouter, createWebHistory, RouterOptions, _RouteRecordBase as RouteBase, RouteRecordRaw as Route, RouteLocation } from "vue-router";
 import { createPinia } from 'pinia';
+import VueRx from 'vue-rx';
 import HelpIcon from "./directives/HelpIcon";
 import RequiredIcon from "./directives/RequiredIcon";
 import {VisualCheck, VisualLink, VisualPicker, VisualRadio} from "@ClientApp/components/VisualPicker";
@@ -71,6 +72,13 @@ export function initializeApp(appRoot: App<Element>) {
     return appRoot;
 }
 
+
+export function addRxJS(appRoot: App<Element>) {
+    appRoot.use((theApp) => {
+        VueRx(Vue);
+    });
+    return appRoot;
+}
 
 export function initializeStore(appRoot: App<Element>) {
     appRoot.use(createPinia());

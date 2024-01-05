@@ -15,8 +15,7 @@
   ],
   "exclude": [
     "src/**/__tests__/*",
-    "node_modules",
-    "scripts/typings/*"
+    "node_modules"
   ],
   "compilerOptions": {
     "paths": {
@@ -40,6 +39,10 @@
       ],
       "@/*": ["./src/*"]
     },
+    "typeRoots": [
+      "./scripts/typings",
+      "./node_modules/@types"
+    ],
     "composite": true,
     "baseUrl": ".",
     "verbatimModuleSyntax": false,

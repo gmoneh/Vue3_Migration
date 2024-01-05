@@ -1,3 +1,5 @@
+import {BvModal, BvToast} from "bootstrap-vue";
+
 declare module 'vue' {
     import { CompatVue } from '@vue/runtime-dom'
     const Vue: CompatVue
